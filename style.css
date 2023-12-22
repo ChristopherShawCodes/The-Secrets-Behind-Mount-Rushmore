@@ -274,26 +274,6 @@ input {
   color:#D5BC91;
 }
 
-.services .services-container {
-  display: block;
-  width: 100%;
-  max-width: 1000px;
-  margin: 0 auto;
-}
-.services .services-container .service {
-  position: relative;
-  display: block;
-  float: left;
-  width: 30%;
-  margin-left: 1.6666%;
-  margin-right: 1.6666%;
-  padding: 20px;
-  opacity: 0;
-}
-
-.clear {
-  clear: both;
-}
 @media screen and (max-width: 800px) {
   .services .services-container .service {
     position: relative;
@@ -570,16 +550,9 @@ canvas {
   
 }
 
-.bottom-gradient-text{
-  color: rgb(177, 176, 176);
-  font-family: sans-serif;
-  margin-top: 2rem;
-  letter-spacing: 2px;
-  width: 40%;
-  margin-left: 10%;
-  height: 80%;
-  font-size: 2rem;
-  line-height: 2.4rem;
+.bottom-gradient h1{
+  color: #D5BC91;
+  
 }
 
 .container {
@@ -592,22 +565,19 @@ scale: 1.5;
 }
 
 
-.bottom-gradient-top-container{
-display: flex;
-}
+
 
 .services {
 height: 30vh;
+width: 100%;
 z-index: 100;
-position: relative;
-text-align: center;
 justify-content: center;
 }
 
 .services h1 {
 color: #D5BC91;
 font-size: 6em;
-
+text-align: center;
 }
 
 
@@ -638,13 +608,14 @@ font-size: 6em;
     }
     
   }
-  .case-study-gallery{
-    width: 90%;
-    max-width:1100px;
-    margin-left: 10%;
-    padding-bottom:100px;
 
+  .case-study-gallery{
+    padding-bottom:100px;
+    justify-content: center;
+    opacity: 0.8;
+    padding-left: 4%;
   }
+
   .case-study {
     position: relative;
     display:block;
@@ -665,15 +636,6 @@ font-size: 6em;
       margin-left: 25px;
     }
   }
-  
-  
-    .case-study__img{
-      width: 90%;
-      display:block;
-        margin-top:50%;
-      transform:translateY(50%);
-      margin:0 auto;
-    }
   
   
   .case-study__overlay {
@@ -711,33 +673,13 @@ font-size: 6em;
       transition:all .3s cubic-bezier(.3, 0, 0, 1.3);
     }
     
-    .case-study__link {
-      position: relative;
-      display:block;
-      width:60%;
-      top:200px;
-      padding:10px;
-      margin: 0 auto;
-      font-family: 'Oswald';
-      color:white;
-      letter-spacing:3px;
-      text-decoration: none;
-      text-align: center;
-      border:2px solid white;
-      border-radius:3px;
-      font-size: 1.25em;
-      transition:all .3s cubic-bezier(.3, 0, 0, 1.3);
-      &:hover {
-        background-color: white;
-        color:#202020;
-      }
-    }
   
   
   .case-study:hover {
     
     .case-study__title{
       top:0;
+      padding-top: 15%;
     }
     .case-study__link{
       top:0;
@@ -749,21 +691,27 @@ font-size: 6em;
   }
   
   .study1{
-    background-image: url('http://www.livingfengshui.ca/wp-content/uploads/2014/01/unsplash-contemplative.jpg');
+    max-width: 90%;
+    background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/097/original/south-dakota-location-map.jpg?1703267419');
   }
   .study2 {
-    background-image: url('http://imgs.abduzeedo.com/files/paul0v2/unsplash/unsplash-04.jpg');
+    max-width: 90%;
+    background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/099/original/black-hills-national-forest-2869.jpg?1703268064');
   }
   .study3{
-    background-image: url('http://415vince.com/wp-content/uploads/2014/07/unsplash-mts.jpg');
+    max-width: 90%;
+    background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/103/original/wind_cave.jpeg?1703268859');
   }
   .study4{
-    background-image: url('https://41.media.tumblr.com/8d41610b4f5e7d5b68e4430b736fbeb3/tumblr_n4vbj2Vv8h1st5lhmo1_1280.jpg');
+    max-width: 90%;
+    background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/104/original/needles-highway.jpg?1703269441');
   }
   .study5{
-    background-image: url('http://publicdomainarchive.com/wp-content/uploads/2014/06/public-domain-images-free-stock-photos-high-quality-resolution-downloads-unsplash0067-1000x666.jpg');
+    max-width: 90%;
+    background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/105/original/stone-mountain.jpg?1703269578');
   }
   .study6{
-    background-image: url('http://www.bedlammag.com/wp-content/uploads/2014/04/unsplash-love-yourself-article-e1397699812178.jpg');
+    max-width: 90%;
+    background-image: url('https://s3.amazonaws.com/shecodesio-production/uploads/files/000/108/106/original/makota.jpeg?1703269704');
     
   }
